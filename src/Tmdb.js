@@ -40,7 +40,7 @@ export default {
           
             {
                 slug: 'horror',
-                title: 'Filmes de Suspense',
+                title: 'Filmes de Terror',
                 items: await basicFetch(`/discover/movie?with_genres=27&language=pt-BR&api_key=${API_KEY}`)
 
             },
