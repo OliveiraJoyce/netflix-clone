@@ -5,7 +5,7 @@ import MovieRow from './components/MovieRow';
 import FeaturedMovie from './components/FeaturedMovie';
 
 
-export default () => {
+export const App = () => {
 
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
