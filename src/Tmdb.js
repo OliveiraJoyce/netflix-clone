@@ -65,7 +65,7 @@ export default {
         if (movieId) {
             switch (type) {
                 case 'movie':
-                    // PFilme
+                    // Filme
                     info = await basicFetch(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`);
                     break;
                     //Série 
