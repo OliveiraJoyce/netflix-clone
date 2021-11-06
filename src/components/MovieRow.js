@@ -1,7 +1,7 @@
 import React from 'react';
 import './MovieRow.css'
 
-export default ({title, items}) => {
+export const MovieRow = ({title, items}) => {
     return (
         <div className="movieRow">
             <h2>{title}</h2>

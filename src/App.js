@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import "./App.css";
-import Tmdb from './Tmdb';
-import MovieRow from './components/MovieRow';
-import FeaturedMovie from './components/FeaturedMovie';
+import {Tmdb} from './Tmdb';
+import {MovieRow} from './components/MovieRow';
+import {FeaturedMovie} from './components/FeaturedMovie';
 
 
 export const App = () => {
@@ -25,9 +25,9 @@ export const App = () => {
       let chosen = originals[0].items.results[randomChosen];
       
       let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv')
-      console.log(chosenInfo)
+      console.log(chosenInfo);
       setFeaturedData(chosenInfo);
-    }
+    };
 
     loadAll();
   }, [])

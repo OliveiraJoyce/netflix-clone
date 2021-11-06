@@ -1,7 +1,7 @@
 import React from 'react';
 import './FeaturedMovie.css';
 
-export default ({item}) => {
+export const FeaturedMovie= ({item}) => {
 
     let firstDate = new Date(item.first_air_date);
 

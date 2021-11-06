@@ -1,4 +1,3 @@
-import React from 'react';
 
 const API_KEY = '34c5a39e77f0fe54885bf89cc3c5d30f';
 const API_BASE = 'https://api.themoviedb.org/3';
@@ -9,7 +8,7 @@ const basicFetch = async (endpoint) => {
     return json;
 }
 
-export default {
+export const Tmdb = {
     getHomeList: async () => {
         return [
             {
